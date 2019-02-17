@@ -7,19 +7,36 @@
 //
 
 import UIKit
+import ObjectiveDDP
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var pass: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func signinBtnClicked(_ sender: Any) {
+        me?.logon(withEmail: email.text!, password: pass.text!, responseCallback: { (response, error) in
+            if let err = error
+            {
+                print(err)
+            }
+            else
+            {
+                print(response)
+            }
+        })
     }
-
+    
+    @IBAction func goBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
 }
 

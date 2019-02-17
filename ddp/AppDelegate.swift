@@ -8,15 +8,21 @@
 
 import UIKit
 import CoreData
+import ObjectiveDDP
+
+//let Meteor = METCoreDataDDPClient(serverURL: URL(string: "ws://18.224.108.40/websocket")!)
+var me = MeteorClient(ddpVersion: "pre2")
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        me?.ddp = ObjectiveDDP(urlString: "ws://18.224.108.40/websocket", delegate: me!)
+        me?.ddp.connectWebSocket()
+        
         return true
     }
 
