@@ -48,6 +48,14 @@
                                     <action selector="goBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jYC-zo-e1n"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48R-yx-0LR">
+                                <rect key="frame" x="191" y="500" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="post"/>
+                                <connections>
+                                    <action selector="postBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vvi-9d-bt3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

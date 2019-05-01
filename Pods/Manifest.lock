@@ -1,0 +1,24 @@
+PODS:
+  - M13OrderedDictionary (1.1.0)
+  - ObjectiveDDP (0.2.0):
+    - M13OrderedDictionary
+    - SocketRocket (= 0.4.1)
+  - SocketRocket (0.4.1)
+
+DEPENDENCIES:
+  - ObjectiveDDP
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - M13OrderedDictionary
+    - ObjectiveDDP
+    - SocketRocket
+
+SPEC CHECKSUMS:
+  M13OrderedDictionary: 6e157fe9c82aa6b3cd7198f5c5c30c7a6834c4a6
+  ObjectiveDDP: 31a2ffbb2f4f3d1b363590fde1b3eb02a75c37d2
+  SocketRocket: ee0b5c34182d37bb4f1f8d628bbe737718126daa
+
+PODFILE CHECKSUM: 21d2f9652a6da7171b0278a0a4f3cbe4e700786e
+
+COCOAPODS: 1.5.0

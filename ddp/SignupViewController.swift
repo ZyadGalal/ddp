@@ -16,16 +16,7 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        me?.callMethodName("posts.methods.create", parameters: ["Zyad Galal" , "first post"], responseCallback: { (response, error) in
-            if let err = error
-            {
-                print(err)
-            }
-            else
-            {
-                print(response)
-            }
-        })
+        
         // Do any additional setup after loading the view.
     }
 
